@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d7ecff;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #1e90ff;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #32cd32;
+        }
+        .error {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather Info App</h1>
+    <form method="POST">
+        <input type="text" name="city" placeholder="Enter city" required>
+        <button type="submit">Get Weather</button>
+    </form>
+    
+    {% if weather %}
+        <div class="result">{{ weather }}</div>
+    {% elif weather is not none %}
+        <div class="error">Sorry, we couldn't retrieve the data.</div>
+    {% endif %}
+</body>
+</html>
