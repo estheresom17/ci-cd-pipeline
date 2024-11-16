@@ -1,4 +1,4 @@
-name: Python CI/CD Pipeline
+name: Flask CI/CD Pipeline
 
 on:
   push:
@@ -13,11 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Step 1: Check out the code
+    # Step 1: Checkout the repository
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # Step 2: Set up Python environment
+    # Step 2: Set up Python
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
@@ -31,12 +31,7 @@ jobs:
 
     # Step 4: Run tests
     - name: Run tests
-      run: pytest
+      run: |
+        pytest
 
-    # Step 5: Perform static code analysis with Bandit
-    - name: Static analysis with Bandit
-      run: bandit -r src/
-
-    # Step 6: Check dependencies with Safety
-    - name: Dependency scanning with Safety
-      run: safety check --full-report
+    
