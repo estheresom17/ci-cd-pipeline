@@ -61,7 +61,7 @@ This project demonstrates the integration of application development with modern
 ---
 
 ## Running the Project
-1. Clone the repository: `git clone <repo_url>`.
+1. Clone the repository: `git clone https://github.com/estheresom17/ci-cd-pipeline.git`.
 2. Install dependencies: `pip install -r requirements.txt`.
 3. Run the app locally: `python app.py`.
 4. Test the app: `pytest`.
