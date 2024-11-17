@@ -1,4 +1,4 @@
-# Project Overview: CI/CD Weather Application
+# CI/CD Weather Application
 This is a simple weather web application built using Flask. It integrates automated testing and a CI/CD pipeline to ensure the codebase is always reliable and secure. Below is a step-by-step explanation of the process involved in creating, testing, and deploying the application.
 
 ## Steps to Build the Project
