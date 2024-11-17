@@ -1,6 +1,6 @@
 # Weather Info App with CI/CD Pipeline
 ## Overview
-A Python application that fetches real-time weather information for a given city using the OpenWeatherMap API. The project also includes a CI/CD pipeline for automated testing and security checks.
+A Python application that fetches real-time weather information for a given city using the OpenWeatherMap API. The mini-app also includes a CI/CD pipeline for automated testing and security checks.
 ## Features
 - **Real-Time Weather**: Fetches and displays weather data.
 - **CI/CD Pipeline**: Automates testing and security analysis.
